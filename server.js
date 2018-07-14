@@ -16,11 +16,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/alumno', function (req, res) {
-  res.render('index', 
+  res.render('alumno/index', 
   	{ 	title: 'Pagina web', 
   		message: 'Curso de preprivado',
   		description:'fundamentos basicos de programacion',
-  		fechaDeInicio: '14/07/2018'
+  		listado :[{alumno:"Jorge", edad: 30},{alumno:"Jose",edad: 20}]
   	}
   	);
 });

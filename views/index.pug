@@ -4,13 +4,12 @@ html
   body
     h1!= message
     h2!= description
-    h3!= description
-    h4!= fechaDeInicio
-        
 
     input(type='text' name='nombre')
     input(type='text' name='carnet')
 
     button(type='button' class='btn btn-info btn-lg') Guardar alumno
 
-    
+    for alumno in listado
+        p #{ alumno.alumno }
+
