@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 app.get('/alumno', function (req, res) {
   res.render('alumno/index',
   	{ 	title: 'Participantes',
-    datos
+        datos: [{id:1,nombre:"Jorge Santos",carnet:"2890-06-17819",ciclo:"8",facultad:"Ingenieria en sistemas",evento:"Inscripcion",categoria:"futbol"}]
   	});
 });
 //mostramos el formulario cuando lo soliciten
