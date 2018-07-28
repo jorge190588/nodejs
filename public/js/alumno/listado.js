@@ -1,5 +1,5 @@
 
-var ListadoModule = function(){
+var ModuloListado = function(){
 	var _private = {}, _public = {}; 
 
 	_public.__construct = function() {
@@ -18,6 +18,6 @@ var ListadoModule = function(){
 
 	return _public.__construct.apply(this, arguments);
 }
-var listado = new ListadoModule();
+var listado = new ModuloListado();
 document.addEventListener('DOMContentLoaded',listado.iniciar() , false);
 
